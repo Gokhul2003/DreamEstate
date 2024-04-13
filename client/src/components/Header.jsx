@@ -32,7 +32,7 @@ const Header = () => {
           </Link>
           <Link to="/SignUp">
             <li className=" sm:inline text-slate-700 hover:underline">
-              Sign in
+              Sign Un
             </li>
           </Link>
         </ul>
