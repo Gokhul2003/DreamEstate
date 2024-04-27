@@ -25,7 +25,11 @@ export const signin = async (req, res, next) => {
     if (!validPassword) return next(errorHandler(401, 'Wrong credentials!'));
     //this id is created in mongodb which is unique
     const token = jwt.sign({ id: validUser._id }, process.env.JWT_SECRET);
-    const { password: pass, ...rest } = validUser._doc;
+    
+  // console.log(validUser)
+  //separting password  and rest data
+  const { password: pass, ...rest } = validUser._doc;
+    
     //saving the token in cookie
     res
       .cookie('access_token', token, { httpOnly: true })//no third pary can acess this coookie
