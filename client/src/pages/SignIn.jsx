@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 // import OAuth from '../components/OAuth';
+import { useDispatch, useSelector } from "react-redux";
+
 import {
   signInStart,
-  signInFailure,
   signInSuccess,
+  signInFailure,
 } from "../redux/user/userSlice";
-import { useDispatch, useSelector } from "react-redux";
-export default function SignIn() {
+
+export default function SignIn(){
   const [formData, setFormData] = useState({});
   const { loading, error } = useSelector((state) => state.user);
   const navigate = useNavigate();
@@ -30,15 +32,15 @@ export default function SignIn() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       if (data.success === false) {
         dispatch(signInFailure(data.message));
         return;
       }
-      dispatch(signInSuccess(data.message));
+      dispatch(signInSuccess(data));
       navigate("/");
     } catch (error) {
-      dispatch(signInFailure(data.message));
+      dispatch(signInFailure(error.message));
     }
   };
   return (
