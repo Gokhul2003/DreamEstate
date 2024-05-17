@@ -1,12 +1,14 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useRef,useState,useEffect} from "react";
-import {getStorage,ref} from 'firebase/storage'
+import {getStorage,ref, uploadBytesResumable} from 'firebase/storage'
 
 const Profile = () => {
   const fileRef = useRef(null);
   const { currentUser } = useSelector((state) => state.user);
   const[file,setfile]=useState(undefined)
+  const[fileperc,setFileperc]=useState(0)
+  const[fileUploadError,setFileUploadError]=useState(false)
 
   useEffect(()=>{
     if(file)
@@ -17,8 +19,20 @@ const Profile = () => {
 
   const handleFileUpload=(file)=>{
     const storage=getStorage(app)
+    //to get unique file name each time by adding date
     const fileName=new Date().getTime()+file.name
-    cons
+    const storageRef=ref(storage,fileName)
+    const uploadTask=uploadBytesResumable(storageRef,file)
+
+    uploadTask.on('state_changed',
+      
+    (snapshot)=>{
+      const progress=(snapshot.bytesTransferred/snapshot.totalBytes)*100
+      setFileperc(Math.round(progress))
+    });
+    (error)=>{
+      setFileUploadError(true)
+    }
   }
   return (
     <div className="p-3 max-w-lg mx-auto">
