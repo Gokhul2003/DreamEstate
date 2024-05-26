@@ -23,7 +23,7 @@ export default function App() {
           <Route path='/create-listing' element={<CreateListing />} />
           <Route
             path="/update-listing/:listingId"
-            element={<updateListing/>}
+            element={<UpdateListing/>}
           />
         </Route>
       </Routes>
