@@ -135,6 +135,7 @@ export default function CreateListing() {
         },
         body: JSON.stringify({
           ...formData,
+          //in userref curretn user id is been stored for listing validation
           userRef: currentUser._id,
         }),
       });
