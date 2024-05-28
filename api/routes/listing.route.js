@@ -3,7 +3,8 @@ import {
   createListing,
   deleteListing,
   getListing,
-  updateListing
+  updateListing,
+  getListings
 } from "../controllers/listing.controller.js";
 import { verifyToken } from "../utils/verifyUser.js";
 
@@ -12,7 +13,7 @@ const router = express.Router();
 router.post("/create", verifyToken, createListing);
 router.delete("/delete/:id", verifyToken, deleteListing);
 router.post("/update/:id", verifyToken, updateListing);
-//no need of verify token because evryone can see the listing
+//no need of verify token because everyone can see the listing
 router.get("/get/:id", getListing);
-
+router.get('/get',getListings)
 export default router;
