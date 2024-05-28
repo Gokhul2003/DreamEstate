@@ -96,6 +96,8 @@ export const getListings = async (req, res, next) => {
 
     const order = req.query.order || 'desc';
 
+    //this route is fetching the data which matches the query if furnished is true in the query then it will show
+    //also in the name we've added regex tu search all sentence and words and to avoid the caps we've  provided '$options:i'
     const listings = await Listing.find({
       name: { $regex: searchTerm, $options: 'i' },
       offer,
