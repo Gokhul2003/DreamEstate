@@ -18,7 +18,10 @@ export default function Search() {
   const [listings, setListings] = useState([]);
   const [showMore, setShowMore] = useState(false);
 
+
+  // in order to change the data given in search bar to the filter section
   useEffect(() => {
+    //get all the value  from url params
     const urlParams = new URLSearchParams(location.search);
     const searchTermFromUrl = urlParams.get('searchTerm');
     const typeFromUrl = urlParams.get('type');
@@ -72,7 +75,7 @@ export default function Search() {
       e.target.id === 'rent' ||
       e.target.id === 'sale'
     ) {
-      setSidebardata({ ...sidebardata, type: e.target.id });
+      setSidebardata({ ...sidebardata, type: e.target.id /* the type can be all or rent or sale */ });
     }
 
     if (e.target.id === 'searchTerm') {
@@ -182,7 +185,7 @@ export default function Search() {
                 id='offer'
                 className='w-5'
                 onChange={handleChange}
-                checked={sidebardata.offer}
+                checked={sidebardata.offer}//this will only check if sidebar .offer is true
               />
               <span>Offer</span>
             </div>
@@ -219,7 +222,7 @@ export default function Search() {
               className='border rounded-lg p-3'
             >
               <option value='regularPrice_desc'>Price high to low</option>
-              <option value='regularPrice_asc'>Price low to hight</option>
+              <option value='regularPrice_asc'>Price low to high</option>
               <option value='createdAt_desc'>Latest</option>
               <option value='createdAt_asc'>Oldest</option>
             </select>
@@ -247,7 +250,7 @@ export default function Search() {
             listings &&
             listings.map((listing) => (
               <ListingItem key={listing._id} listing={listing} />
-            ))}
+            ))} 
 
           {showMore && (
             <button
