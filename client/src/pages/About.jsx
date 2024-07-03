@@ -3,7 +3,7 @@ import React from 'react';
 export default function About() {
   return (
     <div className='py-20 px-4 max-w-6xl mx-auto'>
-      <h1 className='text-4xl font-bold mb-8 text-gray-800 transition-opacity duration-1000 delay-200'>About GokulDam Estate</h1>
+      <h1 className='text-4xl font-bold mb-8 text-gray-800 transition-opacity duration-1000 delay-200'>About DreamEstate </h1>
       <div className="bg-white shadow-lg rounded-lg p-8 transition-opacity duration-1000 delay-200">
         <p className='mb-6 text-lg text-gray-700'>
           DreamEstate is a leading real estate agency that specializes in helping clients buy, sell, and rent properties in the most desirable neighborhoods. Our team of experienced agents is dedicated to providing exceptional service and making the buying and selling process as smooth as possible.

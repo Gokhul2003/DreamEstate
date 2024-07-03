@@ -329,7 +329,7 @@ export default function CreateListing() {
               type="button"
               className="p-2 text-green-700 border border-green-700 rounded uppercase hover:opacity-110 disabled:opacity-80"
             >
-              {uploading ? "Uplaoding" : "Upload"}
+              {uploading ? "Uploading" : "Upload"}
             </button>
           </div>
           <p className="text-red-700 text-sm">
