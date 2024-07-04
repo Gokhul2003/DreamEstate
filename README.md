@@ -26,12 +26,13 @@ DreamEstate🏡 is a Real Estate Marketplace built with Reactjs. It enables secu
 
 👉 **Authentication**: Implemented Jwt, Firebase, and Google OAuth  allowing users to securely log in , while ensuring appropriate access levels and permissions within the platform.
 
-👉**Property Listing**:Allows user to create, read, update and delete property listings according to their requirements.
+👉**Property Listing**:Allows user to create, read, update and delete property listings according to their requirements.Also added Mail functionality to contact the owner for rental or buying the
+property
 
 👉**Image Upload & Search Functionality**:Enhance the user experience with image uploads, property listing management and also provides enhanced search functionalities with
 filtering according to your needs for better user experiences.
 
-👉 **Real-time Functionality**: Provides Real time listing of properties 
+👉 **Real-time Functionality**: Provides Real time listing of properties.
 
 👉 **Responsive Design**: Follows responsive design principles to ensure optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
 
