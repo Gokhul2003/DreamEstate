@@ -2,14 +2,9 @@
   <br />
  <h3>🏡 DreamEstate - A Real Estate Marketplace 🏡</h3>  
  
-
-
 https://github.com/Gokhul2003/DreamEstate/assets/114300171/8280fe08-fb58-48fd-97ff-5e8024ad2e25
 
-
-
-
-Built with Reactjs. DreamEstate🏡 is a Real Estate Marketplace. It enables secure property listing management with JWT, Firebase, and Google OAuth, featuring real-time listings, image uploads, and advanced search functionalities for a seamless user experience.
+DreamEstate🏡 is a Real Estate Marketplace built with Reactjs. It enables secure property listing management with JWT, Firebase, and Google OAuth, featuring real-time listings, image uploads, and advanced search functionalities for a seamless user experience.
   <div>
   <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&logo=react&logoColor=white&color=61DAFB" alt="react" />
   <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
@@ -35,8 +30,6 @@ Built with Reactjs. DreamEstate🏡 is a Real Estate Marketplace. It enables sec
 
 👉**Image Upload & Search Functionality**:Enhance the user experience with image uploads, property listing management and also provides enhanced search functionalities with
 filtering according to your needs for better user experiences.
-
-👉 **Personal Room**: Users have a personal room with a unique meeting link for instant meetings, shareable with others.
 
 👉 **Real-time Functionality**: Provides Real time listing of properties 
 
@@ -84,7 +77,7 @@ Also get a firebase api key from [firebase](https://firebase.google.com/) and ad
 VITE_FIREBASE_API_KEY=' '
 ```
 
-**Running the Project:** Run simultaneously in root and client folder
+**Running the Project:**  Run simultaneously in root and client folder
 
 ```bash
 npm run dev
