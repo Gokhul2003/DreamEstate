@@ -9,22 +9,23 @@ https://github.com/Gokhul2003/DreamEstate/assets/114300171/8280fe08-fb58-48fd-97
 
 
 
-Built with Reactjs. DreamEstate is a Real Estate Marketplace. It enables secure property listing management with JWT, Firebase, and Google OAuth, featuring real-time listings, image uploads, and advanced search functionalities for a seamless user experience.
+Built with Reactjs. DreamEstate🏡 is a Real Estate Marketplace. It enables secure property listing management with JWT, Firebase, and Google OAuth, featuring real-time listings, image uploads, and advanced search functionalities for a seamless user experience.
   <div>
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=reactjs&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+  <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&logo=react&logoColor=white&color=61DAFB" alt="react" />
+  <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+  <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logo=mongodb&logoColor=white&color=47A248" alt="mongodb" />
+  <img src="https://img.shields.io/badge/-Firebase-black?style=for-the-badge&logo=firebase&logoColor=white&color=FFCA28" alt="firebase" />
+
   </div>
 
 </div>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
-- Next.js
-- TypeScript
-- Clerk
-- getstream
-- shadcn
-- Tailwind CSS
+- React.js
+- Tailwindcss
+- FireBase
+- Mongodb
+  
 
 ## <a name="features">🔋 Features</a>
 
@@ -56,13 +57,13 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository:**
 
 ```bash
-git clone https://github.com/Gokhul2003/ZCollab.git
-cd zoom-clone
+git clone https://github.com/Gokhul2003/DreamEstate.git
+cd DreamEstate
 ```
 
 **Installation:**
 
-Install the project dependencies using npm:
+Install the project dependencies using npm in the root and Client folder as well:
 
 ```bash
 npm install
@@ -73,19 +74,17 @@ npm install
 Create a new file named `.env.local` in the root of your project and add the following content:
 
 ```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-
-NEXT_PUBLIC_STREAM_API_KEY=
-STREAM_SECRET_KEY=
+MONGO=' '
+JWT_SECRET='Any Random'
 ```
 
-Replace the placeholder values with your actual Clerk & getstream credentials. You can obtain these credentials by signing up on the [Clerk website](https://clerk.com/) and [getstream website](https://getstream.io/)
+Also get a firebase api key from [firebase](https://firebase.google.com/) and add it in `.env ` inside client folder:
 
-**Running the Project:**
+```env
+VITE_FIREBASE_API_KEY=' '
+```
+
+**Running the Project:** Run simultaneously in root and client folder
 
 ```bash
 npm run dev
