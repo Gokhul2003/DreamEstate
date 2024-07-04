@@ -9,9 +9,9 @@ https://github.com/Gokhul2003/DreamEstate/assets/114300171/8280fe08-fb58-48fd-97
 
 
 
-Built with the latest Next.js. ZCollab a video conferencing tool. It enables users to securely log in, create meetings and access various meeting functionalities such as recording, screen sharing, and managing participants.
+Built with Reactjs. DreamEstate is a Real Estate Marketplace. It enables secure property listing management with JWT, Firebase, and Google OAuth, featuring real-time listings, image uploads, and advanced search functionalities for a seamless user experience.
   <div>
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
+    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=reactjs&color=3178C6" alt="typescript" />
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
