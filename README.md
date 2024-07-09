@@ -68,14 +68,14 @@ npm install
 Create a new file named `.env.local` in the root of your project and add the following content:
 
 ```env
-MONGO=' '
+MONGO=''
 JWT_SECRET='Any Random'
 ```
 
 Also get a firebase api key from [firebase](https://firebase.google.com/) and add it in `.env ` inside client folder:
 
 ```env
-VITE_FIREBASE_API_KEY=' '
+VITE_FIREBASE_API_KEY=''
 ```
 
 **Running the Project:**  Run simultaneously in root and client folder
